@@ -7,7 +7,7 @@
     {{ block.super }}
     {% url 'admin:jsi18n' as jsi18nurl %}
     <script type="text/javascript" src="{{ jsi18nurl|default:"../../../jsi18n/" }}"></script>
-    <link rel="stylesheet" type="text/css" href="{% admin_media_prefix %}css/widgets.css" />
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/widgets.css" />
     {{ media }}
 {% endblock %}
 
