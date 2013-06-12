@@ -228,7 +228,7 @@ class NexusSite(object):
             return serve(request, path='%s/%s' % (module, path))
 
         if module == 'nexus':
-            document_root = os.path.join(NEXUS_ROOT, 'media')
+            document_root = os.path.join(NEXUS_ROOT, 'static')
         else:
             document_root = self.get_module(module).media_root
 

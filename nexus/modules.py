@@ -40,7 +40,7 @@ class NexusModule(object):
 
         if not self.media_root:
             mod = __import__(self.__class__.__module__)
-            self.media_root = os.path.normpath(os.path.join(os.path.dirname(mod.__file__), 'media'))
+            self.media_root = os.path.normpath(os.path.join(os.path.dirname(mod.__file__), 'static'))
 
     def __getattribute__(self, name):
         NexusModule.set_global('site', object.__getattribute__(self, 'site'))
