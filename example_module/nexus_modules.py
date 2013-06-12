@@ -8,7 +8,7 @@ class HelloWorldModule(nexus.NexusModule):
         return 'Hello World'
 
     def get_urls(self):
-        from django.conf.urls.defaults import patterns, url
+        from django.conf.urls import patterns, url
 
         urlpatterns = patterns('',
             url(r'^$', self.as_view(self.index), name='index'),
