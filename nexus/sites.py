@@ -1,4 +1,5 @@
 # Core site concept heavily inspired by django.contrib.sites
+from functools import update_wrapper
 
 from django.conf import settings
 from django.core.context_processors import csrf
