@@ -81,3 +81,5 @@ def autodiscover(site=None):
 
     # autodiscover was successful, reset loading flag.
     LOADING = False
+
+default_app_config = 'nexus.apps.NexusConfig'
