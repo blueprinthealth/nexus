@@ -8,7 +8,3 @@ for r in _reqs:
     if r not in settings.INSTALLED_APPS:
         raise ImproperlyConfigured("Put '%s' in your "
             "INSTALLED_APPS setting in order to use the nexus application." % r)
-
-# XXX but we needed registered nexus modules to update
-# STATICFILES_DIRS setting for collectstatic command
-__import__(settings.ROOT_URLCONF)
